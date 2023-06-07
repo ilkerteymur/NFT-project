@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+        /*https://palettes.shecodes.io/*/
+    background: radial-gradient(circle at 10% 30%,rgb(113, 114, 122) 8%,rgb(73, 83, 94) 81.3%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 50px; /* IC BLOSLUK */
+    position: fixed;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+.navbar .menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu ul li{
+    list-style: none;
+}
+
+.navbar .menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.navbar .action{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar .action i{
+    color: white;
+}
+
+.navbar .action button{
+    background-color: #940041;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+                  /*  BANNER  */
+
+.banner{
+
+    display: flex;  /* ESNEK HIZALAMA */
+    flex-direction: row; /* YATAY HIZALAMA */
+    padding: 90px 0px 20px 50px;
+    background-color: black;
+ }       
+ 
+ 
+.banner .left{
+
+    width: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column; /* DIKEY HIZALAMA */
+    align-items: start;
+    justify-content: space-evenly;
+    padding-top: 20px;
+ }
+
+.banner .left h1{
+    font-size: 58px;
+    font-weight: 600;
+ }
+
+ .banner .left h3{
+    font-weight: 300;
+ }
+
+ .left button{
+    border: 3px solid #940041;
+    background-color: #4b0322;
+    color: white;
+    border-radius: 10px;
+    padding: 0 0 0 5px;
+    margin-top: 60px;
+    border: none;
+ }
+
+ .left button i{
+    background-color: #940041;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ .banner .right img{
+    object-fit: cover;
+ }
+
+        /* PRODUCT */
+
+.product{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    background-color: black;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8) 80%, black), url("https://images.unsplash.com/photo-1517999144091-3d9dca6d1e43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80");
+    padding: 80px 0;
+
+}
+
+.product h1{
+    margin-bottom: 50px;
+}
+
+.product h1 span{
+    color: #940041;
+}
+
+.product .cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card img{
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+.product .card-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+    background-color: #940041;
+}
+
+.product .card-content button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.product .card-process{
+    background-color: #940041;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+/* ABOUT */
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+    text-align: center;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8) 70%, black), url("back.png");
+    color: white;
+}
+
+.abouts{
+    display: flex;
+    gap: 15px;
+}
+
+
+.abouts-card i{
+    margin-bottom: 15px;
+}
+
+.abouts-card p{
+    padding: 0 45px;
+}
+
+.abouts-card h3{
+    color: #940041;
+}
+
+.about h1{
+margin-bottom: 50px;
+}
+
+.about h1 span{
+    color: #940041;
+}
+
+
+
+                /*  SPONSOR */
+
+.sponsor{
+    background-color: black;
+    color: white;
+    padding: 50px 50px;
+    text-align: center;
+}
+
+.sponsor h1 span{
+    color: #940041;
+}
+
+.sponsor h1{
+    margin-bottom: 50px;
+}
+
+.sponsor img{
+    padding: 10px;
+    margin: 10px;
+}
+
+.sponsor img:nth-child(2n){
+    background-color: #141b22;
+}
+   
+
+/* FOOTER */
+
+footer{
+    background: radial-gradient(circle at 10% 30%,rgb(138, 141, 160) 8%,rgb(73, 83, 94) 81.3%);
+    display: flex;
+    gap: 50px;
+    color: white;
+    padding: 50px 50px;
+    justify-content: space-around;
+}
+
+.footer-left{
+
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.footer-left i{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.footer-left .social i:hover{
+    color: #940041;
+    transition: ease 0.3s;
+}
+
+.footer-left .rights{
+    margin-top: 70px;
+}
+
+
+.footer-left .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+.footer-right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.footer-right ul{
+    width: 200px;
+    text-align: start;
+}
+
+.footer-right li:hover{
+    color: #940041;
+    transform: scale(1.1);
+    transition: ease .3s;
+}
+
+.footer-right ul li{
+    list-style-type: none;
+}
+.footer-right ul li:nth-child(1){
+    font-size: 24px;
+    color: black;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-right ul li:nth-child(1):hover{
+    color: #4b0322;
+}
+
+/* only screen sadece ekran icin ayarlar */
+@media only screen and (max-width: 767px) {
+  /* 767px aşağısı icin */
+  /* Örnek stil özellikleri */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Stil özellikleri, tablet boyut için geçerli */
+/* min 768px ===  max-1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Örnek stil özellikleri */
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+ 
+}
+
+/* Stil özellikleri, laptop boyut için geçerli */
+@media only screen and (min-width: 1024px) {
+  /* 1024 yukarisi icin */
+  /* Örnek stil özellikleri */
+}
+
+@media only screen and (max-width: 1024px) {
+    .menu{
+        position: sticky;
+    }
+
+    .navbar .menu ul li a{
+        display: none;
+    }
+
+   
+  }
